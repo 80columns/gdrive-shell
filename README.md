@@ -1,33 +1,33 @@
 # gdrive-shell
 
 This code enables you to perform the following functions in Google Drive:
-1. Show the contents of a folder
-Examples:
-	ls (shows the contents of the current folder)
-	ls relative/path
+1. Show the contents of a folder  
+Examples:  
+	ls (shows the contents of the current folder)  
+	ls relative/path  
 	ls /absolute/path
 
-2. Change your current path to another folder
-Examples:
-	cd relative/path
-	cd /absolute/path
+2. Change your current path to another folder  
+Examples:  
+	cd relative/path  
+	cd /absolute/path  
 	cd ..
 
-3. Recursively transfer ownership of a specific folder or file to another Google user. Note that this will apply permissions on each individual file contained within a folder, not just the top-level folder object itself.
-Examples:
-	transfer user@domain.com (transfers the contents of the current folder)
-	transfer relative/path > user@domain.com
+3. Recursively transfer ownership of a specific folder or file to another Google user. Note that this will apply permissions on each individual file contained within a folder, not just the top-level folder object itself.  
+Examples:  
+	transfer user@domain.com (transfers the contents of the current folder)  
+	transfer relative/path > user@domain.com  
 	transfer /absolute/path > user@domain.com
 
-4. Upload a file from your local system to a folder in your drive
-Examples:
-	upload /absolute/path/to/localfile (uploads the localfile into the current folder)
-	upload /absolute/path/to/localfile > relative/path
+4. Upload a file from your local system to a folder in your drive  
+Examples:  
+	upload /absolute/path/to/localfile (uploads the localfile into the current folder)  
+	upload /absolute/path/to/localfile > relative/path  
 	upload /absolute/path/to/localfile > /absolute/path
 
-5. Find files and folders matching query strings within your current drive folder
-Examples:
-	find *partialmatch
+5. Find files and folders matching query strings within your current drive folder  
+Examples:  
+	find *partialmatch  
 	find exactmatch
 
 ## Instructions
