@@ -8,9 +8,9 @@ RUN apt upgrade
 # Set server timezone before tzdata package is installed below
 RUN ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime && echo $CONTAINER_TIMEZONE > /etc/timezone
 
-# Install Python 3.9
-RUN apt install -y python3.9 python3-pip libmagic1 python3-magic git vim
-RUN ln -s /usr/bin/python3.9 /usr/bin/python
+# Install Python 3.8
+RUN apt install -y python3.8 python3-pip libmagic1 python3-magic git vim
+RUN ln -s /usr/bin/python3.8 /usr/bin/python
 
 # Install Google API client libraries for Python
 RUN pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib tabulate humanize python-magic
