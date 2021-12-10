@@ -33,12 +33,12 @@ Examples:
 ## Instructions
 To run this code, use Docker to build & run the image specified in Dockerfile:
 
-docker build -t gdshell .
+docker build -t gdshell .  
 docker run -it gdshell /bin/bash
 
 Once your Docker session is active, you can navigate to the gdshell folder in /root/gdshell and run the program:
 
-cd /root/gdshell
+cd /root/gdshell  
 ./main.py
 
 You will need to supply your own values for project_id, client_id, and client_secret within the credentials.json file. This file exists as a reference and does not actually contain any credentials.
